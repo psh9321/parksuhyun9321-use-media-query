@@ -1,20 +1,22 @@
 {
   "name": "@parksuhyun9321/use-media-query",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.cjs",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "type": "module",
-  "exports" : {
-    "." : {
-      "types" : "./dist/index.d.ts",
-      "import" : "./dist/index.cjs",
-      "require" : "./dist/index.js"
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.cjs",
+      "require": "./dist/index.js"
     }
   },
-    "peerDependencies": {
+  "peerDependencies": {
     "react": ">=18"
   },
   "scripts": {
