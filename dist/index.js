@@ -1,32 +1,7 @@
-var __defProp = Object.defineProperty;
-var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
-var __getOwnPropNames = Object.getOwnPropertyNames;
-var __hasOwnProp = Object.prototype.hasOwnProperty;
-var __export = (target, all) => {
-  for (var name in all)
-    __defProp(target, name, { get: all[name], enumerable: true });
-};
-var __copyProps = (to, from, except, desc) => {
-  if (from && typeof from === "object" || typeof from === "function") {
-    for (let key of __getOwnPropNames(from))
-      if (!__hasOwnProp.call(to, key) && key !== except)
-        __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
-  }
-  return to;
-};
-var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
-
-// src/index.ts
-var index_exports = {};
-__export(index_exports, {
-  useMediaQuery: () => useMediaQuery
-});
-module.exports = __toCommonJS(index_exports);
-
-// src/useMediaQuery.ts
-var import_react = require("react");
+// index.ts
+import { useEffect, useState } from "react";
 var useMediaQuery = (maxWidth) => {
-  const [isResize, SetIsResize] = (0, import_react.useState)(() => {
+  const [isResize, SetIsResize] = useState(() => {
     if (typeof window === "undefined") return true;
     return window.innerWidth < maxWidth;
   });
@@ -34,7 +9,7 @@ var useMediaQuery = (maxWidth) => {
     const value = window.innerWidth < maxWidth;
     SetIsResize((prev) => prev === value ? prev : value);
   }
-  (0, import_react.useEffect)(() => {
+  useEffect(() => {
     window.addEventListener("resize", ResizeCallback);
     return () => {
       window.removeEventListener("resize", ResizeCallback);
@@ -42,7 +17,7 @@ var useMediaQuery = (maxWidth) => {
   }, [maxWidth]);
   return { isResize };
 };
-// Annotate the CommonJS export names for ESM import in node:
-0 && (module.exports = {
-  useMediaQuery
-});
+var index_default = useMediaQuery;
+export {
+  index_default as default
+};

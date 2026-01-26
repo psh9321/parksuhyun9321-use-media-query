@@ -2,12 +2,21 @@
   "name": "@parksuhyun9321/use-media-query",
   "version": "1.0.4",
   "description": "",
-  "main": "dist/index.cjs",
-  "module": "dist/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.cjs",
   "types": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
+  "type": "module",
+  "exports" : {
+    "." : {
+      "types" : "./dist/index.d.ts",
+      "import" : "./dist/index.cjs",
+      "require" : "./dist/index.js"
+    }
+  },
+    "peerDependencies": {
+    "react": ">=18"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "pnpm tsup"

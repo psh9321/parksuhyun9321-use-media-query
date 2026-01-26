@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-export const useMediaQuery = (maxWidth : number) => {
+const useMediaQuery = (maxWidth : number) => {
 
     const [ isResize, SetIsResize ] = useState<boolean>(() => {
         if(typeof window === "undefined") return true
@@ -22,3 +22,5 @@ export const useMediaQuery = (maxWidth : number) => {
 
     return {isResize}
 }
+
+export default useMediaQuery
