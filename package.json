@@ -1,14 +1,16 @@
 {
   "name": "@parksuhyun9321/use-media-query",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build" : "pnpm tsup"
+    "build": "pnpm tsup"
   },
   "keywords": [],
   "author": "",
