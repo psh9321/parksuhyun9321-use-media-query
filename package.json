@@ -1,13 +1,13 @@
 {
   "name": "@parksuhyun9321/use-media-query",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "pnpm vitest run",
-    "build" : "pnpm tsup"
+    "build": "pnpm tsup"
   },
   "files": [
     "dist"
