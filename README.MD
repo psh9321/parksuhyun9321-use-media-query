@@ -6,7 +6,7 @@
  - yarn add @parksuhyun9321@use-media-query
 
 ## 테스트 
- - pnpm vitest run
+ - pnpm test
 
 ## 빌드 
  - pnpm tsup

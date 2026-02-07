@@ -2,7 +2,7 @@ import { renderHook, act } from "@testing-library/react";
 
 import { describe, it, expect } from "vitest";
 
-import useMediaQuery from "./index";
+import { useMediaQuery } from "./index";
 
 describe("useMediaQuery", () => {
   const setWindowWidth = (width: number) => {

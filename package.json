@@ -5,6 +5,10 @@
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "pnpm vitest run",
+    "build" : "pnpm tsup"
+  },
   "files": [
     "dist"
   ],
