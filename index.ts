@@ -23,4 +23,4 @@ const useMediaQuery = (maxWidth : number) => {
     return {isResize}
 }
 
-export { useMediaQuery }
+export default useMediaQuery

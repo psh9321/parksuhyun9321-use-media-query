@@ -17,6 +17,7 @@ var useMediaQuery = (maxWidth) => {
   }, [maxWidth]);
   return { isResize };
 };
+var index_default = useMediaQuery;
 export {
-  useMediaQuery
+  index_default as default
 };

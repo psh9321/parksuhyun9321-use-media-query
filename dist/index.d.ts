@@ -2,4 +2,4 @@ declare const useMediaQuery: (maxWidth: number) => {
     isResize: boolean;
 };
 
-export { useMediaQuery };
+export { useMediaQuery as default };
