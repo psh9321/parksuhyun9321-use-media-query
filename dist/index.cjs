@@ -19,7 +19,7 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // index.ts
 var index_exports = {};
 __export(index_exports, {
-  default: () => index_default
+  useMediaQuery: () => useMediaQuery
 });
 module.exports = __toCommonJS(index_exports);
 var import_react = require("react");
@@ -40,4 +40,7 @@ var useMediaQuery = (maxWidth) => {
   }, [maxWidth]);
   return { isResize };
 };
-var index_default = useMediaQuery;
+// Annotate the CommonJS export names for ESM import in node:
+0 && (module.exports = {
+  useMediaQuery
+});
