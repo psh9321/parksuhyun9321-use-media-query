@@ -22,7 +22,7 @@
 
     export default () => {
         <>
-            <h1>예제</h1>
+            예제
             { !isResize && <Component> }
         </>
     }
