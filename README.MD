@@ -16,7 +16,7 @@
 - 브라우저 뷰포트에 따른 조건부 렌더링을 위해 사용
 
 ### example
- - 브라우저 사이즈 가 설정한 maxWidth 보다 클때 Component 를 랜더링 하고 싶을 시
+ - 브라우저 사이즈 가 설정한 maxWidth 보다 클때 Component 를 랜더링하고 싶을 시
 
     const [isVisible, SetIsVisible] = useState(false);
     const { isResize } = useMediaQuery(700);
