@@ -18,18 +18,11 @@
 ### example
  - 브라우저 사이즈 가 설정한 maxWidth 보다 클때 Component 를 랜더링하고 싶을 시
 
-    const [isVisible, SetIsVisible] = useState(false);
     const { isResize } = useMediaQuery(700);
 
-    useEffect(() => {
-        if(isResize) SetIsVisible(false);
-        else SetIsVisible(true);
-    },[isResize])
-
     export default () => {
-        return (
-            <>
-                { isVisible && <Component> }        
-            </>
-        )
+        <>
+            <h1>예제</h1>
+            { !isResize && <Component> }
+        </>
     }
