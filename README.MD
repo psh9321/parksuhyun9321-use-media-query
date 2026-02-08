@@ -23,6 +23,6 @@
     export default () => {
         <>
             예제
-            { !isResize && <Component> }
+            { !isResize && <Component/> }
         </>
     }
