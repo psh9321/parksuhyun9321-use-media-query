@@ -1,6 +1,6 @@
 {
   "name": "@parksuhyun9321/use-media-query",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "",
   "scripts": {
     "test": "pnpm vitest run",
