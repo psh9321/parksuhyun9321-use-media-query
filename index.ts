@@ -1,14 +1,15 @@
 import { useEffect, useState } from "react"
 
-const useMediaQuery = (maxWidth : number) => {
+const useMediaQuery = (maxWidth : number, isInclusive? : boolean) => {
 
     const [ isResize, SetIsResize ] = useState<boolean>(() => {
         if(typeof window === "undefined") return true
-        return window.innerWidth < maxWidth
+
+        return isInclusive ? window.innerWidth <= maxWidth : window.innerWidth < maxWidth
     });
 
     function ResizeCallback() {
-        const value = window.innerWidth < maxWidth;
+        const value = isInclusive ? window.innerWidth <= maxWidth : window.innerWidth < maxWidth;
         SetIsResize(prev => prev === value ? prev : value);
     }
 
