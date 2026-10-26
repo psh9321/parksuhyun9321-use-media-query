@@ -16,13 +16,12 @@
 - 브라우저 뷰포트에 따른 조건부 렌더링을 위해 사용
 
 ### example
- - 브라우저 사이즈 가 설정한 maxWidth 보다 클때 Component 를 랜더링하고 싶을 시
 
-    const { isResize } = useMediaQuery(700);
+	import useMediaQuery from "@parksuhyun9321/use-media-query";
 
-    export default () => {
-        <>
-            예제
-            { !isResize && <컴포넌트/> }
-        </>
-    }
+	const Example = () => {
+		const { isResize } = useMediaQuery(700);
+
+		/** 브라우저 사이즈가 700 보다 클때 p 태그를 랜더링 */
+		return <> { !isResize && <p>700</p> } </>
+	}
