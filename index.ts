@@ -19,7 +19,7 @@ const useMediaQuery = (maxWidth : number, isInclusive? : boolean) => {
         return () => {
             window.removeEventListener("resize", ResizeCallback)
         }
-    }, [maxWidth])
+    }, [maxWidth, isInclusive])
 
     return {isResize}
 }
