@@ -1,4 +1,4 @@
-declare const useMediaQuery: (maxWidth: number) => {
+declare const useMediaQuery: (maxWidth: number, isInclusive?: boolean) => {
     isResize: boolean;
 };
 

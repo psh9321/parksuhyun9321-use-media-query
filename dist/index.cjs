@@ -23,13 +23,13 @@ __export(index_exports, {
 });
 module.exports = __toCommonJS(index_exports);
 var import_react = require("react");
-var useMediaQuery = (maxWidth) => {
+var useMediaQuery = (maxWidth, isInclusive) => {
   const [isResize, SetIsResize] = (0, import_react.useState)(() => {
     if (typeof window === "undefined") return true;
-    return window.innerWidth < maxWidth;
+    return isInclusive ? window.innerWidth <= maxWidth : window.innerWidth < maxWidth;
   });
   function ResizeCallback() {
-    const value = window.innerWidth < maxWidth;
+    const value = isInclusive ? window.innerWidth <= maxWidth : window.innerWidth < maxWidth;
     SetIsResize((prev) => prev === value ? prev : value);
   }
   (0, import_react.useEffect)(() => {
