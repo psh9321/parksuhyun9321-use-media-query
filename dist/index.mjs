@@ -14,7 +14,7 @@ var useMediaQuery = (maxWidth, isInclusive) => {
     return () => {
       window.removeEventListener("resize", ResizeCallback);
     };
-  }, [maxWidth]);
+  }, [maxWidth, isInclusive]);
   return { isResize };
 };
 var index_default = useMediaQuery;
